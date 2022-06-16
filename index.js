@@ -1,5 +1,13 @@
-function isPalindrome(word) {
+function isPalindrome(message) {
   // Write your algorithm here
+  for (let i = 0; i < message.length / 2; i++) {
+    const end = message.length - 1 - i;
+    if (message[i] !== message[end]) {
+      
+      return false;
+    }
+  }
+  return true
 }
 
 /* 
